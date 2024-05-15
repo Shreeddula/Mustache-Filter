@@ -1,0 +1,41 @@
+body{
+    background-size: cover;
+}
+.heading{
+    width:80%;
+    font-size:60px;
+    animation-name: changeFont;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeFont{
+    from{
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+    to{ 
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+#take_snap{
+    font-size: 20px;
+    width: 200px;
+    font-family: monospace;
+}
+
+canvas{
+    animation-duration: 4s;
+    animation-name: changeCanvas;
+    animation-iteration-count:infinite ;
+}
+
+@keyframes changeCanvas{
+    from{box-shadow: 5px 5px 40px black;}
+    to{box-shadow: 5px 5px 40px whitesmoke;}
+}
